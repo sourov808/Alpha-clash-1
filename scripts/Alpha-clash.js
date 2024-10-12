@@ -8,7 +8,20 @@
 // }
 
 
+function containurGame(){
+    const alphabet =getRandomAlphabet();
+    console.log(alphabet);
+
+    //set randomly alphabet
+    const currentAlphabetElement = document.getElementById('random-letter');
+    currentAlphabetElement.innerText = alphabet ;
+
+    setBackgroundColor(alphabet)
+}
+
+
 function play(){
     hideElementById('home-scren');
-    showElementsById('play-ground')
+    showElementsById('play-ground');
+    containurGame();
 }
